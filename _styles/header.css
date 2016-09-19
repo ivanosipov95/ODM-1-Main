@@ -1,0 +1,161 @@
+#top_header {
+    background: #39c2d7;
+    display: flex;
+    justify-content: space-between;
+}
+
+#top_header > ul > li {
+    padding-right: 20px;
+}
+
+#top_header > ul > li > a {
+    font-size: 12px;
+}
+
+#top_header > ul > li.selected {
+    margin: 0 0 0 13px;
+    padding: 0 14px 0 22px;
+    background: #eee;
+}
+
+#top_header > ul > li.selected > a {
+    color: #464547;
+    height: 16px;
+    padding: 6px 10px 6px 0;
+}
+
+/* todo: align figures*/
+#top_header > ul > li.selected > figure {
+    padding: 0 4px 0 4px;
+    margin-top: 3px;
+}
+
+#logo {
+    padding: 2px 0 2px 22px;
+}
+
+body > header ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+body > header ul li {
+    list-style-type: none;
+    display: inline-flex;
+    margin: auto;
+}
+
+body > header ul li a {
+    font-size: 10px;
+}
+
+/*                 MIDDLE                    */
+
+#middle_header {
+    background: #eee;
+    display: flex;
+    justify-content: space-between;
+}
+
+#middle_header > ul > li > a {
+    color: #000;
+    text-transform: uppercase;
+}
+
+#middle_header > ul:first-child {
+    margin: 6.5px 0 6.5px 20px;
+}
+#middle_header > ul:first-child > li {
+    margin: 0 5px 0 0;
+    padding: 3.5px 9px 3.5px 9px;
+}
+
+#middle_header > ul:first-child > li.selected {
+    background: #39c2d7;
+}
+
+#middle_header > ul:first-child > li.selected > a {
+    color: #fff;
+}
+
+#middle_header > ul:last-child > li {
+    margin-right: 18px;
+}
+
+#middle_header > ul:last-child > li > a {
+    color: #999;
+}
+
+aside > nav > ul li > a:after {
+    font-family: FontAwesome;
+    position: relative;
+    float: right;
+    top: 3px;
+    right: 19px;
+    font-size: 12pt;
+}
+
+#middle_header > ul:last-child > li > a::before {
+    font-family: FontAwesome;
+    margin-right: 5px;
+}
+
+#zoom {
+    margin-left: 14px;
+}
+
+#share::before {
+    content: '\f1e0';
+}
+
+#follow::before {
+    content: '\f006';
+}
+#edit::before {
+    content: '\f040';
+}
+
+#bottom_header {
+    background: #464547;
+    position: relative;;
+    /*display: inline-block;*/
+    /*justify-content: flex-start;*/
+}
+
+#bottom_header > figure {
+    display: inline-block;
+    margin: 19px 0 12px 20px;
+}
+
+#bottom_header > figure > a {
+    display: block;
+    height: 31px;
+    width: 87px;
+}
+
+/*noinspection ALL*/
+#bottom_header > h1 {
+    position: relative;
+    left: 26px;
+    bottom: 11px;
+    margin: 0;
+    display: inline-block;
+    width: 35px;
+    height: 17px;
+    color: #7ae6f7;
+    font-family: "Oswald Regular";
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+#search {
+    position: relative;
+    float: right;
+    right: 19px;
+    margin: 0;
+}
+
+
+
