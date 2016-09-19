@@ -1,0 +1,98 @@
+body > aside {
+    float: left;
+    width: 250px;
+    padding-bottom: 32767px;
+    margin-bottom: -32767px;
+    overflow: hidden;
+    background: #a3c644;
+}
+
+#leftMenu > ul {
+    margin: 0;
+    padding: 0;
+}
+
+#leftMenu > ul > li {
+    list-style-type: none;
+    border-bottom: 1px #b2ce66 solid;
+    height: 48px;
+}
+
+/*noinspection ALL*/
+#leftMenu > ul > li > a {
+    display: inline-block;
+    position: relative;
+    top: 12px;
+    left: 50px;
+    width: 34px;
+    height: 12px;
+    color: white;
+    font-family: "Oswald Regular";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+/*noinspection ALL*/
+#home::before,
+#documents::before,
+#calendar::before,
+#archive::before,
+#nomenclature::before,
+#organizations::before {
+    content: "\f015";
+    display: inline-block;
+    position: relative;
+    left: 30px;
+    top: 14px;
+    font-family: FontAwesome;
+    width: 21px;
+    height: 17px;
+    color: white;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#documents::before {
+    content: "\f0f6";
+}
+
+/*noinspection ALL*/
+#documents::after {
+    content: "\f0d7";
+    display: inline-block;
+    position: relative;
+    float: right;
+    right: 26px;
+    top: 16px;
+    width: 9px;
+    height: 6px;
+    color: white;
+    font-family: FontAwesome;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+#calendar::before {
+    content: "\f073";
+}
+
+#archive::before {
+    content: "\f187";
+}
+
+#nomenclature::before {
+    content: "\f0ca";
+}
+
+#organizations::before {
+    content: "\f0b1";
+}
+
+#leftMenu > ul > li.selected {
+    background: #8aa839;
+}
+
+body > section {
+    margin-left: 250px;
+}

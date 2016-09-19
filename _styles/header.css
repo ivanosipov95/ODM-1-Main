@@ -87,6 +87,7 @@ body > header ul li a {
     color: #999;
 }
 
+/*noinspection ALL*/
 aside > nav > ul li > a:after {
     font-family: FontAwesome;
     position: relative;
@@ -96,6 +97,7 @@ aside > nav > ul li > a:after {
     font-size: 12pt;
 }
 
+/*noinspection ALL*/
 #middle_header > ul:last-child > li > a::before {
     font-family: FontAwesome;
     margin-right: 5px;
