@@ -1,0 +1,177 @@
+#mainCalender ul {
+    display: flex;
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+}
+
+#mainCalender ul a {
+    display: block;
+    position: relative;
+    top: 1px;
+}
+
+#mainCalender ul a:hover {
+    text-decoration: underline;
+}
+
+/*noinspection ALL*/
+#mainCalender li {
+    color: white;
+    font-size: 14px;
+    font-family: "SourceSansPro Regular";
+    letter-spacing: 0.5px;
+}
+
+#schedule1 {
+    width: 450px;
+    top: 50px;
+    left: 10px;
+}
+
+#schedule1 > li:first-child {
+    height: 22px;
+    width: 9px;
+    background: #6a812c;
+}
+
+#schedule1 > li:last-child {
+    text-indent: 9px;
+    background: #a3c644;
+    padding-right: 27px;
+}
+
+#schedule2 {
+    top: 27px;
+    left: 525px;
+}
+
+#schedule3 {
+    top: 28px;
+    left: 525px;
+}
+
+#schedule2 > li:first-child,
+#schedule3 > li:first-child {
+    height: 22px;
+    width: 9px;
+    background: #9a7e22;
+}
+
+#schedule2 > li:last-child,
+#schedule3 > li:last-child {
+    text-indent: 9px;
+    background: #ecc134;
+    padding-right: 26px;
+}
+
+#schedule4 {
+    top: 111px;
+    left: 12px;
+}
+
+#schedule4 > li:last-child {
+    text-indent: 3px;
+    background: #ecc134;
+}
+
+#schedule5 {
+    top: 113px;
+    left: 12px;
+}
+
+#schedule5 > li:first-child {
+    height: 22px;
+    width: 9px;
+    background: #75192e;
+}
+
+#schedule5 > li:last-child {
+    text-indent: 5px;
+    background: #b32746;
+    padding-right: 29px;
+}
+
+#schedule6 {
+    top: 112px;
+    left: 12px;
+}
+
+#schedule6 > li:first-child {
+    height: 22px;
+    width: 9px;
+    background: #60527b;
+}
+
+#schedule6 > li:last-child {
+    text-indent: 5px;
+    background: #937ebd;
+}
+
+#schedule7 {
+    top: 111px;
+    left: 12px;
+}
+
+#schedule7 > li:first-child {
+    height: 22px;
+    width: 9px;
+    background: #257770;
+}
+
+#schedule7 > li:last-child {
+    text-indent: 3px;
+    background: #39b7ac;
+}
+
+/*noinspection ALL*/
+#schedule8 {
+    position: relative;
+    display: inline-block;
+    top: 108px;
+    left: 11px;
+    color: #666;
+    font-family: "SourceSansPro Regular";
+    font-size: 12px;
+    text-indent: 9px;
+}
+
+/*noinspection ALL*/
+#schedule8::before {
+    content: "\f0d7";
+    display: inline-block;
+    position: relative;
+    float: left;
+    top: 3px;
+    right: 6px;
+    font-family: FontAwesome;
+    font-size: 10px;
+    color: #666;
+    width: 5px;
+}
+
+
+
+
+.tooltip {
+    position: relative;
+}
+.tooltip em {
+    display: none;
+}
+.tooltip:hover em {
+    font-style: normal;
+    display: block;
+    position: absolute;
+    background: #000;
+    color: #FFF;
+    padding: 3px 5px;
+    bottom: 22px;
+    right: 0;
+    box-shadow: 0 0 5px #ccc;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-box-shadow: 0 0 5px #ccc;
+    -moz-box-shadow: 0 0 5px #ccc;
+}

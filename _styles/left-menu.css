@@ -85,7 +85,7 @@ body > aside {
 }
 
 #organizations::before {
-    content: "\f0b1";
+    content: "\f0f2";
 }
 
 #leftMenu > ul > li.selected {

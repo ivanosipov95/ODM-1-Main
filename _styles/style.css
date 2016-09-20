@@ -1,5 +1,8 @@
 @import "header.css";
 @import "left-menu.css";
+@import "calendar.css";
+@import "documents.css";
+@import "on-control.css";
 @import "footer.css";
 
 @font-face {
@@ -12,8 +15,24 @@
     src: url(/_fonts/Oswald-Regular.ttf);
 }
 
+@font-face {
+    font-family: 'SourceSansPro Regular';
+    src: url(/_fonts/SourceSansPro-Regular.otf);
+}
+
+html {
+    min-width: 1440px;
+}
+
 body {
     margin: 0;
+}
+
+body > section {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+    overflow: hidden;
 }
 
 figure {
