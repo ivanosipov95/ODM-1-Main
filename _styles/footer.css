@@ -1,0 +1,34 @@
+body > footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #464547;
+}
+
+body > footer > h5 {
+    margin-top: 24px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    color: #fff;
+}
+
+body > footer > ul {
+    display: flex;
+}
+
+body > footer > ul > li {
+    margin-top: 22px;
+    margin-bottom: 18px;
+    padding-right: 22px;
+    padding-left: 22px;
+}
+
+body > footer > ul > li > a {
+    font-size: 12px;
+}
+/*todo: fix border*/
+body > footer > ul > li:first-child {
+    border-right: 1px #fff solid;
+}

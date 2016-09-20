@@ -1,5 +1,6 @@
 @import "header.css";
 @import "left-menu.css";
+@import "footer.css";
 
 @font-face {
     font-family: 'FontAwesome';
@@ -22,4 +23,12 @@ figure {
 a {
     text-decoration: none;
     color: white;
+}
+
+ul {
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
 }

@@ -4,7 +4,7 @@ body > aside {
     padding-bottom: 32767px;
     margin-bottom: -32767px;
     overflow: hidden;
-    background: #a3c644;
+    background: #39c2d7;
 }
 
 #leftMenu > ul {
@@ -13,8 +13,7 @@ body > aside {
 }
 
 #leftMenu > ul > li {
-    list-style-type: none;
-    border-bottom: 1px #b2ce66 solid;
+    border-bottom: 1px #5dcbdc solid;
     height: 48px;
 }
 
@@ -90,9 +89,5 @@ body > aside {
 }
 
 #leftMenu > ul > li.selected {
-    background: #8aa839;
-}
-
-body > section {
-    margin-left: 250px;
+    background: #30a5b7;
 }
