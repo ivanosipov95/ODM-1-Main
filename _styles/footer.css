@@ -2,6 +2,7 @@ body > footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+    min-width: 1024px;
     display: flex;
     justify-content: space-between;
     background: #464547;
