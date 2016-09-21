@@ -1,12 +1,10 @@
 #onControl {
-    margin: 15px 12px 16px 0;
-    border: 2px #e6e6e6 solid;
-    height: 695px;
+    margin: 17px 12px 16px 0;
 }
 
 #onControl > header {
     height: 40px;
-    width: 227px;
+    width: 223px;
     background: #666;
 }
 
@@ -14,9 +12,8 @@
 #onControl > header > h3 {
     display: inline-block;
     position: relative;
-    bottom: 3px;
-    left: 34px;
-    width: 71px;
+    bottom: 4px;
+    left: 32px;
     height: 11px;
     color: #feffff;
     font-family: "Oswald Regular";
@@ -28,21 +25,25 @@
 
 /*noinspection ALL*/
 #onControl > header::before {
-    content: "\f06e";
     display: inline-block;
     position: relative;
-    left: 20px;
-    bottom: 2px;
+    left: 18px;
+    bottom: 3px;
     width: 21px;
     height: 14px;
     color: #feffff;
+    content: "\f06e";
     font-family: FontAwesome;
     font-size: 20px;
     font-weight: 400;
 }
 
 #onControl > table {
-    width: 227px;
+    width: 223px;
+    border-left: 2px solid #e6e6e6;
+    border-bottom: 2px solid #e6e6e6;
+    border-right: 2px solid #e6e6e6;
+    padding-bottom: 446px;
 }
 
 #onControl > table tr {
@@ -51,19 +52,18 @@
 
 /*noinspection ALL*/
 #onControl > table td {
-    padding: 6px 0px 13px 10px;
+    padding: 11px 0px 11px 10px;
     text-align: left;
     color: #111;
     font-family: "SourceSansPro Regular";
     font-size: 14px;
-    font-weight: 400;
 }
 
 #onControl > table tr:nth-child(odd) {
     background: #f1f1f1;
 }
 
-#onControl > table td:nth-child(2n){
+#onControl > table td:nth-child(2n) {
     padding-left: 37px;
 }
 

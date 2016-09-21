@@ -1,18 +1,19 @@
 body > footer {
+    display: flex;
+    justify-content: space-between;
     position: fixed;
     bottom: 0;
     width: 100%;
-    min-width: 1024px;
-    display: flex;
-    justify-content: space-between;
     background: #464547;
 }
 
+/*noinspection ALL*/
 body > footer > h5 {
     margin-top: 24px;
     margin-bottom: 20px;
     margin-left: 20px;
-    color: #fff;
+    color: #ccc;
+    font-size: 11px;
 }
 
 body > footer > ul {
@@ -24,12 +25,14 @@ body > footer > ul > li {
     margin-bottom: 18px;
     padding-right: 22px;
     padding-left: 22px;
+    height: 15px;
 }
 
 body > footer > ul > li > a {
-    font-size: 12px;
+    font-size: 11.5px;
+    color: #ccc;
 }
-/*todo: fix border*/
+
 body > footer > ul > li:first-child {
-    border-right: 1px #fff solid;
+    border-right: 1px #ccc solid;
 }

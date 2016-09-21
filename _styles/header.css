@@ -1,109 +1,162 @@
-#top_header {
-    background: #39c2d7;
+body > header {
     display: flex;
+    flex-direction: column;
+}
+
+body > header ul {
+    display: inline-flex;
     justify-content: space-between;
 }
 
-#top_header > ul > li {
-    padding-right: 20px;
+#top_header {
+    display: flex;
+    justify-content: space-between;
+    height: 28px;
+    background: #39c2d7;
 }
 
-#top_header > ul > li > a {
-    font-size: 12px;
+#logo {
+    margin: 4px 0 4px 22px;
+}
+
+/*noinspection ALL*/
+#top_header > ul:first-child > li:last-child > a {
+    display: block;
+    margin: 6px 0 0 7px;
+    font-family: "Oswald Regular";
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+#top_header > ul:last-child li {
+    padding-right: 19px;
+}
+
+/*noinspection ALL*/
+#top_header > ul:last-child > li > a {
+    display: inline-block;
+    margin: 6px 0 0 0;
+    font-size: 14px;
 }
 
 #top_header > ul > li.selected {
-    margin: 0 0 0 13px;
-    padding: 0 14px 0 22px;
+    margin-left: 13px;
+    padding-right: 47px;
+    height: 28px;
     background: #eee;
 }
 
 #top_header > ul > li.selected > a {
+    margin: 7px 0 0 20px;
     color: #464547;
-    height: 16px;
-    padding: 6px 10px 6px 0;
 }
 
-/* todo: align figures*/
 #top_header > ul > li.selected > figure {
-    padding: 0 4px 0 4px;
-    margin-top: 3px;
+    display: inline-block;
+    position: relative;
 }
 
-#logo {
-    padding: 2px 0 2px 22px;
+#chevron {
+    bottom: 2px;
+    left: 12px;
 }
 
-body > header ul {
-    display: flex;
-    margin: 0;
-    padding: 0;
+#settings {
+    top: 3px;
+    left: 22px;
 }
 
-body > header ul li {
-    display: inline-flex;
-    margin: auto;
+#question {
+    top: 3px;
+    left: 27px;
 }
 
-body > header ul li a {
-    font-size: 10px;
+#top_header > ul > li > a:hover {
+    color: #ebebeb;
 }
 
-/*                 MIDDLE                    */
+#top_header > ul > li.selected a:hover {
+    color: #000;
+}
 
 #middle_header {
-    background: #eee;
     display: flex;
     justify-content: space-between;
+    height: 32px;
+    background: #eee;
 }
 
+/*noinspection ALL*/
 #middle_header > ul > li > a {
-    color: #000;
+    color: #666;
+    font-family: "Oswald Regular";
     text-transform: uppercase;
 }
 
-#middle_header > ul:first-child {
-    margin: 6.5px 0 6.5px 20px;
-}
-#middle_header > ul:first-child > li {
-    margin: 0 5px 0 0;
-    padding: 3.5px 9px 3.5px 9px;
+#navigation {
+    margin: 7px 0 6px 20px;
 }
 
-#middle_header > ul:first-child > li.selected {
+#navigation li {
+    padding: 1px 9px 1px 9px;
+}
+
+#navigation > li.selected {
     background: #39c2d7;
 }
 
-#middle_header > ul:first-child > li.selected > a {
+#navigation > li.selected > a {
     color: #fff;
 }
 
-#middle_header > ul:last-child > li {
-    margin-right: 18px;
+#navigation a {
+    position: relative;
+    left: 1px;
+    font-size: 11px;
+    letter-spacing: 1.2px;
+}
+
+#actions {
+    margin: 6px 0 0 0;
+}
+
+#actions a {
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+#actions > li {
+    padding-right: 25px;
 }
 
 #middle_header > ul:last-child > li > a {
     color: #999;
 }
 
-/*noinspection ALL*/
-aside > nav > ul li > a:after {
-    font-family: FontAwesome;
-    position: relative;
-    float: right;
-    top: 3px;
-    right: 19px;
-    font-size: 12pt;
+#middle_header > ul > li > a:hover {
+    color: #000;
+}
+
+#navigation > li.selected > a:hover {
+    color: #fff;
+}
+
+#navigation > li.selected:hover {
+    background: #3bd6eb;
 }
 
 /*noinspection ALL*/
-#middle_header > ul:last-child > li > a::before {
+#actions > li > a::before {
+    position: relative;
+    right: 6px;
     font-family: FontAwesome;
-    margin-right: 5px;
+    font-size: 17px;
 }
 
 #zoom {
-    margin-left: 14px;
+    position: relative;
+    left: 6px;
+    top: 3px;
 }
 
 #share::before {
@@ -113,49 +166,36 @@ aside > nav > ul li > a:after {
 #follow::before {
     content: '\f006';
 }
+
 #edit::before {
     content: '\f040';
 }
 
 #bottom_header {
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
     background: #464547;
-    position: relative;;
-    /*display: inline-block;*/
-    /*justify-content: flex-start;*/
 }
 
-#bottom_header > figure {
-    display: inline-block;
-    margin: 19px 0 12px 20px;
-}
-
-#bottom_header > figure > a {
-    display: block;
-    height: 31px;
-    width: 87px;
+#epamLogo {
+    margin: 19px 0 0 20px;
 }
 
 /*noinspection ALL*/
-#bottom_header > h1 {
-    position: relative;
-    left: 26px;
-    bottom: 11px;
-    margin: 0;
+#bottom_header ul > li > a {
     display: inline-block;
-    width: 35px;
-    height: 17px;
+    margin: 18px 0 0 20px;
     color: #7ae6f7;
     font-family: "Oswald Regular";
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 #search {
-    position: relative;
-    float: right;
-    right: 19px;
-    margin: 0;
+    margin: 23px 19px 0 0;
 }
 
 

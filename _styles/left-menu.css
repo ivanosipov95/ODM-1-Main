@@ -1,15 +1,8 @@
 body > aside {
-    float: left;
+    position: absolute;
+    height: 100%;
     width: 250px;
-    padding-bottom: 32767px;
-    margin-bottom: -32767px;
-    overflow: hidden;
     background: #39c2d7;
-}
-
-#leftMenu > ul {
-    margin: 0;
-    padding: 0;
 }
 
 #leftMenu > ul > li {
@@ -21,15 +14,14 @@ body > aside {
 #leftMenu > ul > li > a {
     display: inline-block;
     position: relative;
-    top: 12px;
+    top: 10.5px;
     left: 50px;
-    width: 34px;
-    height: 12px;
     color: white;
     font-family: "Oswald Regular";
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 /*noinspection ALL*/
@@ -39,11 +31,11 @@ body > aside {
 #archive::before,
 #nomenclature::before,
 #organizations::before {
-    content: "\f015";
     display: inline-block;
     position: relative;
     left: 30px;
     top: 14px;
+    content: "\f015";
     font-family: FontAwesome;
     width: 21px;
     height: 17px;
@@ -58,7 +50,6 @@ body > aside {
 
 /*noinspection ALL*/
 #documents::after {
-    content: "\f0d7";
     display: inline-block;
     position: relative;
     float: right;
@@ -66,6 +57,7 @@ body > aside {
     top: 16px;
     width: 9px;
     height: 6px;
+    content: "\f0d7";
     color: white;
     font-family: FontAwesome;
     font-size: 14px;
