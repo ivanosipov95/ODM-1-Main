@@ -22,7 +22,7 @@ const paths = {
         script: './assets/**/*.js',
         style: './assets/**/*.less',
         font: './assets/**/*.*{ttf,otf}',
-        img: './assets/**/*.png'
+        img: './assets/**/*.*{png,ico}'
     },
     build: {
         html: './build',
@@ -36,7 +36,7 @@ const paths = {
         script: './assets/**/*.js',
         style: './assets/**/*.less',
         font: './assets/**/*.*{ttf,otf}',
-        img: './assets/**/*.png'
+        img: './assets/**/*{png,ico}'
     },
     clean: './build'
 };
@@ -48,12 +48,6 @@ gulp.task('styles', () => {
         .pipe(csso())
         .pipe(gulpIf(isDev, sourcemaps.write()))
         .pipe(gulp.dest(paths.build.style));
-});
-
-gulp.task('assets', () => {
-    return gulp.src(paths.src.html)
-        .pipe(debug({title: 'assets'}))
-        .pipe(gulp.dest(paths.build.html));
 });
 
 gulp.task('scripts', () => {
@@ -75,6 +69,12 @@ gulp.task('img', () => {
     return gulp.src(paths.src.img)
         .pipe(imagemin())
         .pipe(gulp.dest(paths.build.img));
+});
+
+gulp.task('assets', () => {
+    return gulp.src(paths.src.html)
+        .pipe(debug({title: 'assets'}))
+        .pipe(gulp.dest(paths.build.html));
 });
 
 gulp.task('clean', () => {
