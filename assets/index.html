@@ -61,9 +61,12 @@
 
 <aside>
     <nav id="leftMenu">
-        <ul>
-            <li id="home" class="selected"><a href="#">home</a></li>
-            <li id="documents"><a href="#">documents</a></li>
+        <ul class="menu">
+            <li id="home"><a href="#">home</a></li>
+            <li id="documents">
+                <a href="#">documents</a>
+                <ul class="default"></ul>
+            </li>
             <li id="calendar"><a href="#">calendar</a></li>
             <li id="archive"><a href="#">archive</a></li>
             <li id="nomenclature"><a href="#">nomenclature</a></li>
@@ -78,7 +81,7 @@
         <header>
             <figure id="prev"><a href="#"><img src="img/icons/prev.png" alt="Prev"></a></figure>
             <figure id="next"><a href="#"><img src="img/icons/next.png" alt="Next"></a></figure>
-            <h3>august 2015</h3>
+            <h3 id="test">august 2015</h3>
 
             <ul id="schedule1">
                 <li></li>
@@ -142,7 +145,7 @@
         </header>
 
         <div>
-            <table cellspacing="0">
+            <table id="testTable" cellspacing="0">
                 <tr>
                     <th>Monday</th>
                     <th>Tuesday</th>

@@ -19,24 +19,27 @@ const isDev = !process.env.NODE_ENV || process.env.NODE_ENV == 'dev';
 const paths = {
     src: {
         html: './assets/**/*.html',
-        script: './assets/**/*.js',
+        script: './app/**/*.js',
         style: './assets/**/*.less',
         font: './assets/**/*.*{ttf,otf}',
-        img: './assets/**/*.*{png,ico}'
+        img: './assets/**/*.*{png,ico}',
+        data: './app/**/*.json'
     },
     build: {
         html: './build',
         script: './build',
         style: './build',
         font: './build',
-        img: './build'
+        img: './build',
+        data: './build'
     },
     watch: {
         html: './assets/*.html',
-        script: './assets/**/*.js',
+        script: './app/**/*.js',
         style: './assets/**/*.less',
         font: './assets/**/*.*{ttf,otf}',
-        img: './assets/**/*{png,ico}'
+        img: './assets/**/*.*{png,ico}',
+        data: './app/**/*.json'
     },
     clean: './build'
 };
@@ -77,6 +80,11 @@ gulp.task('assets', () => {
         .pipe(gulp.dest(paths.build.html));
 });
 
+gulp.task('data', () => {
+   return gulp.src(paths.src.data)
+       .pipe(gulp.dest(paths.build.data));
+});
+
 gulp.task('clean', () => {
     return del(paths.clean);
 });
@@ -95,10 +103,11 @@ gulp.task('watch', () => {
     gulp.watch(paths.watch.html, ['assets']);
     gulp.watch(paths.watch.font, ['fonts']);
     gulp.watch(paths.watch.img, ['img']);
+    gulp.watch(paths.watch.data, ['data']);
 });
 
 gulp.task('build', (cb) => {
-    runSequence('clean', ['styles', 'scripts', 'fonts', 'img'], 'assets', 'watch', cb);
+    runSequence('clean', ['styles', 'scripts', 'fonts', 'img', 'data'], 'assets', 'watch', cb);
 });
 
 gulp.task('default', (cb) => {

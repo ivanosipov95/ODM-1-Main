@@ -10,6 +10,10 @@ body > aside {
     height: 48px;
 }
 
+#leftMenu > ul > li:hover {
+    background: #30a5b7;
+}
+
 /*noinspection ALL*/
 #leftMenu > ul > li > a {
     display: inline-block;
@@ -49,19 +53,15 @@ body > aside {
 }
 
 /*noinspection ALL*/
-#documents::after {
+#documents > a::after {
     display: inline-block;
     position: relative;
     float: right;
-    right: 26px;
-    top: 16px;
-    width: 9px;
-    height: 6px;
+    left: 55px;
     content: "\f0d7";
     color: white;
     font-family: FontAwesome;
     font-size: 14px;
-    font-weight: 400;
 }
 
 #calendar::before {
@@ -80,6 +80,57 @@ body > aside {
     content: "\f0f2";
 }
 
-#leftMenu > ul > li.selected {
+.show {
     background: #30a5b7;
+}
+
+.menu {
+
+}
+
+.default {
+    display: none;
+}
+
+.expanded {
+    display: block;
+}
+//noinspection ALL
+#documents.show > a::after {
+    display: inline-block;
+    position: relative;
+    float: right;
+    left: 55px;
+    content: "\f0d8";
+    color: white;
+    font-family: FontAwesome;
+    font-size: 14px;
+}
+
+.expanded > li:first-child {
+    margin-top: 25px;
+    border-top: 1px #5dcbdc solid;
+    border-bottom: 1px #5dcbdc solid;
+    height: 46px;
+    background: #30a5b7;
+}
+
+.expanded > li {
+    border-bottom: 1px #5dcbdc solid;
+    height: 46px;
+    background: #30a5b7;
+}
+
+//noinspection ALL
+.expanded > li > a {
+    display: inline-block;
+    position: relative;
+    top: 10.5px;
+    left: 75px;
+    color: white;
+    font-family: "Oswald Regular";
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
