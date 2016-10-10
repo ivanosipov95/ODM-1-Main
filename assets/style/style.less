@@ -1,0 +1,57 @@
+@import "header";
+@import "left-menu";
+@import "calendar";
+@import "documents";
+@import "on-control";
+@import "footer";
+
+//todo convert css to less
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url(../font/fontawesome-webfont.ttf);
+}
+
+@font-face {
+  font-family: 'Oswald Regular';
+  src: url(../font/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'SourceSansPro Regular';
+  src: url(../font/SourceSansPro-Regular.otf);
+}
+
+html {
+  min-width: 1439px;
+}
+
+body {
+  margin: 0;
+}
+
+body > section {
+  display: flex;
+  justify-content: center;
+  margin-left: 250px;
+  margin-bottom: 45px;
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
